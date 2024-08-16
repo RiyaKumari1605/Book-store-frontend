@@ -17,7 +17,7 @@ function Login() {
       password: data.password,
     };
     await axios
-      .post(`${BASE_URL}/user/login`, userInfo)
+      .post(`${BASE_URL}/api/auth/login`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

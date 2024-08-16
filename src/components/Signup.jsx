@@ -18,7 +18,7 @@ function Signup() {
 
   const onSubmit =(data) => {
   let request = {
-    url:'/user/signup',
+    url:'/api/auth/signup',
     data:{
       fullname: data.fullname,
       email: data.email,
