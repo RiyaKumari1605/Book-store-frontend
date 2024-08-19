@@ -20,7 +20,7 @@ function Signup() {
   let request = {
     url:'/api/auth/signup',
     data:{
-      fullname: data.fullname,
+      username: data.fullname,
       email: data.email,
       password: data.password,
     }
@@ -66,7 +66,7 @@ function Signup() {
                   {...register("fullname", { required: true })}
                 />
                 <br />
-                {errors.fullname && (
+                {errors.username && (
                   <span className="text-sm text-red-500">
                     This field is required
                   </span>
